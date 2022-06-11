@@ -2,10 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@600&display=swap');
 
 
+$button: #FFA000;
+
+
+
+
+
 body{
     background-color: #171718;
 }
-
 
 
 
@@ -53,7 +58,7 @@ body{
             gap: 10px;
             width: 169px;
             height: 48px;
-            background-color: #F9B53A;
+            background-color: $button;
             border-radius: 8px;
             font-weight: 500;
             font-size: 16px;
@@ -62,4 +67,86 @@ body{
 
     }
 }
+
+.pageName{
+    color: #FFFF;
+    background: linear-gradient(to right, #1d4350, #a43931);
+    display: flex;
+    align-items: center;
+    height: 600px;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: 700;
+
+    h1{
+        font-size: 55px;
+        font-family: 'Poppins', sans-serif;
+    }
+    p{
+        font-family: 'DM Sans', sans-serif;
+        font-size: 40px;
+
+    }
+    
+}
+
+.container{
+    .resume{
+        width: 544px;
+        height: 409px;
+        left: 453px;
+        top: 816px;
+        text-align: center;
+        margin: 74px auto;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        h1{
+            display: inline;
+            color: #FFFF;
+            font-size: 60px;
+            margin: 0px;
+        }
+        h2{
+            display: inline;
+            color: $button;
+            font-size: 60px;
+            margin: 0px;
+        }
+        p{
+            margin: 10px;
+            color: #ffff;
+            font-size: 20px;
+        }
+        .project{
+            background-color: $button;
+            border: none;
+            width: 171px;
+            height: 47px;
+            border-radius: 8px;
+            color: #FFFF;
+            font-family: 'DM Sans';
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .download{
+            background-color: transparent;
+            border: 1px solid #ffff;
+            border-radius: 8px;
+            width: 171px;
+            height: 47px;
+            align-items: center;
+            color: #FFFF;
+            font-family: 'DM Sans';
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+    }
+}
+
+
+
+
+
 
