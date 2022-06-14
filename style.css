@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 body {
   background-color: #171718;
 }
@@ -78,7 +78,7 @@ body {
   left: 453px;
   top: 816px;
   text-align: center;
-  margin: 74px auto;
+  margin: 57px auto 0px;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
 }
@@ -95,32 +95,104 @@ body {
   margin: 0px;
 }
 .container .resume p {
-  margin: 10px;
+  margin: 0px;
   color: white;
-  font-size: 20px;
+  font-size: 60px;
 }
-.container .resume .project {
+.container .resume .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  margin-top: 30px;
+}
+.container .resume .buttons .project {
   background-color: #FFA000;
   border: none;
-  width: 171px;
+  width: 192px;
   height: 47px;
   border-radius: 8px;
   color: white;
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 16px;
 }
-.container .resume .download {
+.container .resume .buttons .download {
   background-color: transparent;
   border: 1px solid white;
   border-radius: 8px;
-  width: 171px;
+  width: 192px;
   height: 47px;
-  align-items: center;
   color: white;
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 16px;
+}
+.container .gradient {
+  position: absolute;
+  width: 967px;
+  height: 454px;
+  background: linear-gradient(270deg, #F9B53A 10.81%, #FF59A8 100%);
+  opacity: 0.5;
+  filter: blur(600px);
+}
+.container .aboutMe {
+  background-color: #1F1F21;
+  width: 967px;
+  height: 454px;
+  display: flex;
+}
+.container .aboutMe .avatar {
+  width: 326.33px;
+  height: 405.16px;
+  border-radius: 8px;
+  margin: 24px 24px;
+}
+.container .aboutMe .content {
+  flex-direction: column;
+  width: 560px;
+  height: 404.95px;
+  padding: 24px;
+}
+.container .aboutMe .content h1 {
+  color: #FFA000;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  font-size: 48px;
+}
+.container .aboutMe .content p {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  margin: 3px;
+}
+.container .mySkills {
+  width: 1442px;
+  height: 709px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.container .mySkills h1 {
+  color: #FFA000;
+  margin: 0px auto;
+}
+.container .mySkills .skills {
+  width: 1112px;
+  height: 313px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .mySkills .skills .mobile {
+  width: 354px;
+  height: 308px;
+}
+.container .mySkills .skills .manual {
+  width: 354px;
+  height: 308px;
 }
 
 /*# sourceMappingURL=style.css.map */
