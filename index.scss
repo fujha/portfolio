@@ -1,6 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
 $button: #FFA000;
 
@@ -10,6 +9,7 @@ $button: #FFA000;
 
 body{
     background-color: #171718;
+    
 }
 
 
@@ -98,7 +98,7 @@ body{
         left: 453px;
         top: 816px;
         text-align: center;
-        margin: 74px auto;
+        margin: 57px auto 0px;
         font-family: 'DM Sans', sans-serif;
         font-weight: 700;
         h1{
@@ -114,35 +114,129 @@ body{
             margin: 0px;
         }
         p{
-            margin: 10px;
+            margin: 0px;
             color: #ffff;
-            font-size: 20px;
+            font-size: 60px;
         }
-        .project{
-            background-color: $button;
-            border: none;
-            width: 171px;
-            height: 47px;
-            border-radius: 8px;
-            color: #FFFF;
-            font-family: 'DM Sans';
-            font-weight: 500;
-            font-size: 16px;
-        }
-        .download{
-            background-color: transparent;
-            border: 1px solid #ffff;
-            border-radius: 8px;
-            width: 171px;
-            height: 47px;
+
+
+        .buttons{
+            display: flex;;
+            justify-content: center;
             align-items: center;
-            color: #FFFF;
-            font-family: 'DM Sans';
-            font-weight: 500;
-            font-size: 16px;
+            padding: 0px;
+            gap: 24px;
+            margin-top: 30px;
+
+            .project{
+                background-color: $button;
+                border: none;
+                width: 192px;
+                height: 47px;
+                border-radius: 8px;
+                color: #FFFF;
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                
+            }
+            .download{
+                background-color: transparent;
+                border: 1px solid #ffff;
+                border-radius: 8px;
+                width: 192px;
+                height: 47px;
+                color: #ffff;
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+            }
+
         }
 
     }
+
+
+    .gradient{
+        position: absolute;
+        width: 967px;
+        height: 454px;
+
+        background: linear-gradient(270deg, #F9B53A 10.81%, #FF59A8 100%);
+        opacity: 0.5;
+        filter: blur(600px);
+    }
+    
+    .aboutMe{
+        background-color: #1F1F21;
+        width: 967px;
+        height: 454px;
+        display: flex;
+        
+        .avatar{
+            width: 326.33px;
+            height: 405.16px;
+            border-radius: 8px;
+            margin: 24px 24px;
+        }
+
+        .content{
+            flex-direction: column;
+            width: 560px;
+            height: 404.95px;
+            padding: 24px;
+            h1{
+                color: $button;
+                font-weight: 500;
+                font-family: 'DM Sans', sans-serif;
+                font-size: 48px;
+            }
+            p{
+                color: #ffff;
+                font-weight: 400;
+                font-size: 16px;
+                font-family: 'DM Sans', sans-serif;
+                margin: 3px;
+            }
+        }
+    }
+    
+    .mySkills{
+        width: 1442px;
+        height: 709px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        
+
+        h1{
+            color: $button;
+            margin: 0px auto;
+        }
+
+
+        .skills{
+            width: 1112px;
+            height: 313px;
+            display: flex;
+            justify-content: space-between;        
+            .mobile{
+                width: 354px;
+                height: 308px;
+            }
+            .manual{
+                width: 354px;
+                height: 308px;
+            }
+        }
+
+
+    }
+
+
+
+
 }
 
 
