@@ -169,8 +169,6 @@ body {
   margin: 3px;
 }
 .container .mySkills {
-  width: 1442px;
-  height: 709px;
   display: flex;
   justify-content: center;
   text-align: center;
