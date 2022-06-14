@@ -47,6 +47,25 @@ body{
                 margin: 0 15px;
                 vertical-align: middle;
             }
+            a::after{
+                bottom:0;
+                content: "";
+                display: block;
+                width: 0;
+                height: 2px;
+                background: $button;
+                transition: width .3s;
+                right:0;
+                left: initial;
+            }
+            a:hover::after{
+                width: 100%;
+                right:initial;
+                left: 0;
+              
+            }
+
+
         }
 
         button{
@@ -63,6 +82,18 @@ body{
             font-weight: 500;
             font-size: 16px;
             line-height: 16px;
+            a{
+                text-decoration: none;
+                color: #ffff;
+            }
+
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        button:active{
+            background-color: #ffee00;
+            
         }
 
     }
@@ -121,7 +152,7 @@ body{
 
 
         .buttons{
-            display: flex;;
+            display: flex;
             justify-content: center;
             align-items: center;
             padding: 0px;
@@ -137,8 +168,14 @@ body{
                 color: #FFFF;
                 font-family: 'DM Sans', sans-serif;
                 font-weight: 500;
-                font-size: 16px;
-                
+                font-size: 16px;                
+            }
+            .project:hover{
+                cursor: pointer;
+            }
+            .project:active{
+                background-color: #ffe100;
+            
             }
             .download{
                 background-color: transparent;
@@ -150,6 +187,14 @@ body{
                 font-family: 'DM Sans', sans-serif;
                 font-weight: 500;
                 font-size: 16px;
+            }
+            .download:hover{
+                cursor: pointer;
+            }
+            .download:active{
+                background-color: rgba(255, 255, 255, 0.195);
+
+            
             }
 
         }

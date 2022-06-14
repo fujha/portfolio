@@ -36,6 +36,22 @@ body {
   margin: 0 15px;
   vertical-align: middle;
 }
+.container .navbar .links a::after {
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #FFA000;
+  transition: width 0.3s;
+  right: 0;
+  left: initial;
+}
+.container .navbar .links a:hover::after {
+  width: 100%;
+  right: initial;
+  left: 0;
+}
 .container .navbar button {
   font-family: "DM Sans", sans-serif;
   color: white;
@@ -50,6 +66,16 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
+}
+.container .navbar button a {
+  text-decoration: none;
+  color: white;
+}
+.container .navbar button:hover {
+  cursor: pointer;
+}
+.container .navbar button:active {
+  background-color: #ffee00;
 }
 
 .pageName {
@@ -118,6 +144,12 @@ body {
   font-weight: 500;
   font-size: 16px;
 }
+.container .resume .buttons .project:hover {
+  cursor: pointer;
+}
+.container .resume .buttons .project:active {
+  background-color: #ffe100;
+}
 .container .resume .buttons .download {
   background-color: transparent;
   border: 1px solid white;
@@ -128,6 +160,12 @@ body {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 16px;
+}
+.container .resume .buttons .download:hover {
+  cursor: pointer;
+}
+.container .resume .buttons .download:active {
+  background-color: rgba(255, 255, 255, 0.195);
 }
 .container .gradient {
   position: absolute;
