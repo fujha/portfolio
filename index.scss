@@ -1,0 +1,289 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+$button: #FFA000;
+
+
+
+
+
+body{
+    background-color: #171718;
+    
+}
+
+
+
+.container{
+    margin: 0 auto;
+    max-width: 1140px;
+    .navbar{
+        white-space: nowrap;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 84px;
+
+        .logo{
+            color: #ffff;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .links{
+            text-align: center;
+            align-items: center;
+            display: flex;
+
+
+            a{
+                text-decoration: none;
+                color: #ffff;
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 16px;
+                margin: 0 15px;
+                vertical-align: middle;
+            }
+            a::after{
+                bottom:0;
+                content: "";
+                display: block;
+                width: 0;
+                height: 2px;
+                background: $button;
+                transition: width .3s;
+                right:0;
+                left: initial;
+            }
+            a:hover::after{
+                width: 100%;
+                right:initial;
+                left: 0;
+              
+            }
+
+
+        }
+
+        button{
+            font-family: 'DM Sans', sans-serif;
+            color: #ffff;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 20px;
+            gap: 10px;
+            width: 169px;
+            height: 48px;
+            background-color: $button;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+            a{
+                text-decoration: none;
+                color: #ffff;
+            }
+
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        button:active{
+            background-color: #ffee00;
+            
+        }
+
+    }
+}
+
+.pageName{
+    color: #FFFF;
+    background: linear-gradient(to right, #1d4350, #a43931);
+    display: flex;
+    align-items: center;
+    height: 600px;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: 700;
+
+    h1{
+        font-size: 55px;
+        font-family: 'Poppins', sans-serif;
+    }
+    p{
+        font-family: 'DM Sans', sans-serif;
+        font-size: 40px;
+
+    }
+    
+}
+
+.container{
+    .resume{
+        width: 544px;
+        height: 409px;
+        left: 453px;
+        top: 816px;
+        text-align: center;
+        margin: 57px auto 0px;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        h1{
+            display: inline;
+            color: #FFFF;
+            font-size: 60px;
+            margin: 0px;
+        }
+        h2{
+            display: inline;
+            color: $button;
+            font-size: 60px;
+            margin: 0px;
+        }
+        p{
+            margin: 0px;
+            color: #ffff;
+            font-size: 60px;
+        }
+
+
+        .buttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 24px;
+            margin-top: 30px;
+
+            .project{
+                background-color: $button;
+                border: none;
+                width: 192px;
+                height: 47px;
+                border-radius: 8px;
+                color: #FFFF;
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 500;
+                font-size: 16px;                
+            }
+            .project:hover{
+                cursor: pointer;
+            }
+            .project:active{
+                background-color: #ffe100;
+            
+            }
+            .download{
+                background-color: transparent;
+                border: 1px solid #ffff;
+                border-radius: 8px;
+                width: 192px;
+                height: 47px;
+                color: #ffff;
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+            }
+            .download:hover{
+                cursor: pointer;
+            }
+            .download:active{
+                background-color: rgba(255, 255, 255, 0.195);
+
+            
+            }
+
+        }
+
+    }
+
+
+    .gradient{
+        position: absolute;
+        width: 967px;
+        height: 454px;
+
+        background: linear-gradient(270deg, #F9B53A 10.81%, #FF59A8 100%);
+        opacity: 0.5;
+        filter: blur(600px);
+    }
+    
+    .aboutMe{
+        background-color: #1F1F21;
+        width: 967px;
+        height: 454px;
+        display: flex;
+        
+        .avatar{
+            width: 326.33px;
+            height: 405.16px;
+            border-radius: 8px;
+            margin: 24px 24px;
+        }
+
+        .content{
+            flex-direction: column;
+            width: 560px;
+            height: 404.95px;
+            padding: 24px;
+            h1{
+                color: $button;
+                font-weight: 500;
+                font-family: 'DM Sans', sans-serif;
+                font-size: 48px;
+            }
+            p{
+                color: #ffff;
+                font-weight: 400;
+                font-size: 16px;
+                font-family: 'DM Sans', sans-serif;
+                margin: 3px;
+            }
+        }
+    }
+    
+    .mySkills{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        
+
+        h1{
+            color: $button;
+            margin: 0px auto;
+        }
+
+
+        .skills{
+            width: 1112px;
+            height: 313px;
+            display: flex;
+            justify-content: space-between;        
+            .mobile{
+                width: 354px;
+                height: 308px;
+            }
+            .manual{
+                width: 354px;
+                height: 308px;
+            }
+        }
+
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
