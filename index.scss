@@ -204,7 +204,7 @@ body{
 
     .gradient{
         position: absolute;
-        width: 967px;
+        width: 1112px;
         height: 454px;
 
         background: linear-gradient(270deg, #F9B53A 10.81%, #FF59A8 100%);
@@ -215,8 +215,10 @@ body{
     .aboutMe{
         background-color: #1F1F21;
         width: 967px;
-        height: 454px;
+        height: 453.16px;
         display: flex;
+        border: 1.5px solid #3D3D3D;
+        border-radius: 8px;
         
         .avatar{
             width: 326.33px;
@@ -248,29 +250,50 @@ body{
     
     .mySkills{
         display: flex;
-        justify-content: center;
-        text-align: center;
         flex-direction: column;
-        
+        margin-top: 160px;
+        font-family: 'DM Sans', sans-serif;
 
         h1{
             color: $button;
             margin: 0px auto;
+            font-weight: 500;
+            font-size: 34px;
+            margin-bottom: 90px;
+            width: 254px;
+            height: 40px;
+        }
+        h2{
+            font-weight: 500;
+            font-size: 34px;
+            color: #ffff;
+        }
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            color: #ffff;
         }
 
-
         .skills{
-            width: 1112px;
-            height: 313px;
+            margin: 0px -20%;
+            width: 1442px;
+            height: 709px;
             display: flex;
-            justify-content: space-between;        
+            justify-content: space-between;    
+
+              
             .mobile{
                 width: 354px;
                 height: 308px;
+                background-color: #1F1F21;
+                padding: 24px 28px;
+                
             }
             .manual{
                 width: 354px;
                 height: 308px;
+                background-color: #1F1F21;
+                padding: 24px 28px;
             }
         }
 
