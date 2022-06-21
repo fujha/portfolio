@@ -252,5 +252,46 @@ body {
   background-color: #1F1F21;
   padding: 24px 28px;
 }
+.container .myProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .myProjects h1 {
+  color: #FFA000;
+  font-weight: 500;
+  font-size: 34px;
+  font-family: "DM Sans", sans-serif;
+}
+.container .myProjects .github {
+  background-color: #FFA000;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  width: 328px;
+  height: 48px;
+  font-family: "DM Sans", sans-serif;
+}
+.container .myProjects .github:hover {
+  cursor: pointer;
+}
+.container .myProjects .github:active {
+  background-color: #ffe100;
+}
+
+footer {
+  margin: 150px auto auto auto;
+  width: 100%;
+  height: 302px;
+  background-color: #131414;
+}
+footer .theEnd {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-style: 12px;
+  color: white;
+  border-top: 1px solid #26292D;
+}
 
 /*# sourceMappingURL=style.css.map */
